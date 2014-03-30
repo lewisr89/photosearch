@@ -53,7 +53,7 @@ $(document).ready(function() {
     });
 
     $('input').on('blur', function() {               //hides loader GIF when focus off of input. 
-        $('.loading').addClass('hidden');            //a fix for an undesirable effect. loader gif spins when content of input deleted
+        $('.loading').addClass('hidden');         
     })
 
     var timerid;                                     //automatically submit input after time delay
