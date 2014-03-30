@@ -1,0 +1,206 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-------------------------*/
+html, body {
+	height: 100%;
+	width: 100%;
+	background-color: #FDEDED;
+	min-width: 200px;
+}
+
+/* COLUMNS */
+#topbar {
+	display: inline-block;
+	position: fixed;
+	width: 100%;
+	height: 35px;
+	background-color: #55d7df;
+	font-size: 20px;
+	padding-top: 6px;
+	color: white;
+	min-width: 480px;
+	padding-right: 5%;
+	z-index: 2;
+    font-family: 'Signika', sans-serif;
+	text-align: center;
+}
+
+div {
+	display: inline;
+		padding-right:5px;
+
+}
+
+#textdiv {
+	display: inline-block;
+}
+
+.loading {
+    display: inline-block;
+	position: absolute;
+	margin-left: 5px;
+	margin-top: 4px;
+   }
+
+#loadergif {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+}
+
+input {
+	font-size: 18px;
+	border: none;
+	border-radius: 4px;
+	color: #FFF;
+	background-color: #FDEDED;
+	width: 110px;
+	text-align: center;
+font-family: 'Signika', sans-serif;
+}
+
+
+input:focus {
+	background-color: #adebef;
+	border: none;
+	outline: none;
+}
+
+
+#container {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	margin-top: 75px;
+	margin-right: 5%;
+	margin-left: 5%;
+	z-index: 1;
+}
+
+
+/* PICTURES*/
+
+#output div {
+	display: inline-block;
+}
+
+.picturediv {
+	display: inline-block;
+}
+
+#output img {
+-webkit-box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.59);
+-moz-box-shadow:    2px 2px 10px 0px rgba(50, 50, 50, 0.59);
+box-shadow:         2px 2px 10px 0px rgba(50, 50, 50, 0.59);
+}
+
+.hidden {
+	display: none;
+}
+
+#backgroundimage {
+	position: fixed;
+	width: 250px;
+	height: 250px;
+	top: 50%;
+	left: 50%;
+	margin-top: -125px;
+	margin-left: -125px;
+}
+
+/* BUTTONS AND LIKES*/
+.controlbutton {
+	position: relative;
+	margin: 30px 10px 10px 10px;
+	text-align: center;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 20px;
+	font-family: 'Signika', sans-serif;
+	background-color: #FDEDED;
+	color: #55d7df;
+	border: 2px solid #55d7df;
+}
+
+.controlbutton:hover {
+	background-color: #55d7df;
+	color: #FDEDED;
+}
+
+
+#stardiv {
+	background: url('images/heart-icon.png') no-repeat;
+	width: 64px;
+	height: 64px;
+	left: 32px;
+	bottom: 9px;
+	position: relative;
+	z-index: 0;
+	text-align: center;
+}
+
+#likesdiv {
+	position: relative;
+	color: black;
+	text-align: center;
+	bottom: -19px;
+	font-size: 12px;
+	font-family: 'Signika', sans-serif;
+
+}
+
+.likes {
+	position: absolute;
+	left: 26px;
+	top: 19px;
+	color: #FFF;
+	text-align: left;
+}
+
