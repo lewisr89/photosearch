@@ -25,10 +25,12 @@ $(document).ready(function() {
                 $('.controlbutton').removeClass('hidden');
                 console.dir(pic);
                 for (var i = 0; i < pic.data.length; i++) {
-                    likes = pic.data[i].likes.count;
+                    var imageData=pic.data[i];
+                    var numberOfLikes=imageData.likes.count;
+                    likes = numberOfLikes;
                     console.log(likes);
-                    link = pic.data[i].link;
-                    urlsrc = pic.data[i].images.thumbnail.url;
+                    link = imageData.link;
+                    urlsrc = imageData.images.thumbnail.url;
                     $("#output").append("<div id='outputpic'><a target='_blank' href='" + link + "'><div id='stardiv'><div id='likesdiv'>" + likes + "</div></div><img src='" + urlsrc + "'></img></div>");
                 }  
             }      // <img src='star-icon.png' class='staricon'>
