@@ -34,7 +34,6 @@ $(document).ready(function() {
                     $("#output").append("<div id='outputpic'><a target='_blank' href='" + link + "'><div id='heartdiv'><div id='likesdiv'>" + likes + "</div></div><img src='" + urlsrc + "'></img></div>");
                 }  
             }      
-
         });
     }
 
