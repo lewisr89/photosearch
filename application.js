@@ -31,9 +31,9 @@ $(document).ready(function() {
                     console.log(likes);
                     link = imageData.link;
                     urlsrc = imageData.images.thumbnail.url;
-                    $("#output").append("<div id='outputpic'><a target='_blank' href='" + link + "'><div id='stardiv'><div id='likesdiv'>" + likes + "</div></div><img src='" + urlsrc + "'></img></div>");
+                    $("#output").append("<div id='outputpic'><a target='_blank' href='" + link + "'><div id='heartdiv'><div id='likesdiv'>" + likes + "</div></div><img src='" + urlsrc + "'></img></div>");
                 }  
-            }      // <img src='star-icon.png' class='staricon'>
+            }      
 
         });
     }
